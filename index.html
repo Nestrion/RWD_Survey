@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="background-tint">
+    <div id="backdrop"></div>
+    <div id="blur-filter"></div>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey</h1>
+        <p id="description">
+          <em>Please let us know how do you feel about this survey</em>
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <label id="name-label" class="medium-font"
+          >Name:<input id="name" type="text" placeholder="John Doe" required
+        /></label>
+        <label id="email-label" class="medium-font"
+          >Email:<input
+            id="email"
+            type="email"
+            placeholder="john_doe@email.com"
+            required
+        /></label>
+        <label id="number-label" class="medium-font"
+          >Age:<input
+            id="number"
+            type="number"
+            min="20"
+            max="120"
+            placeholder="50"
+            required
+        /></label>
+        <label for="dropdown" id="dropdown-label" class="medium-font"
+          >Gender:
+          <select id="dropdown">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend class="medium-font">Is this a good survey?</legend>
+          <label class="block-display"
+            ><input
+              type="radio"
+              name="choose-one"
+              value="1"
+              checked
+            />Yes</label
+          >
+          <label class="block-display"
+            ><input type="radio" name="choose-one" value="2" />No</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend class="medium-font">
+            How does this survey make you feel?
+          </legend>
+          <label
+            ><input type="checkbox" name="choose-many" value="1" />Sad</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="choose-many"
+              value="2"
+            />Confused</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="choose-many"
+              value="2"
+            />Neutral</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="choose-many"
+              value="2"
+            />Peculiar</label
+          >
+          <label class="inline-block-style"
+            ><input type="checkbox" name="choose-many" value="2" />Joyous</label
+          >
+        </fieldset>
+
+        <label class="medium-font">Any comments or questions?</label>
+        <textarea
+          placeholder="This is the worst survey i have ever seen..."
+        ></textarea>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
